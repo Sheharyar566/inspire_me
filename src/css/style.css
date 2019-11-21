@@ -1,0 +1,303 @@
+/**********************************************************/
+/* Generic Styling */
+#mainPopup, #addnew {
+    width: 500px;
+    height: 480px;
+    font-family: 'Roboto', Helvetica, Ubuntu, Arial, sans-serif;
+}
+
+#addnew {
+    overflow: auto;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom right, rgba(255, 51, 102, 0.9),rgba(255, 51, 102, 0.9)),url('../assets/popup_header.jpg');
+}
+
+#logo {
+    color: white;
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+
+/************************************************************/
+/* Initial Screen Styling */
+#startscreen {
+    background: url('../assets/popup_background.png') no-repeat center;
+    background-size: 90%;
+}
+
+#left, #right {
+    width: 250px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left {
+    background-color: rgba(75, 0, 130, 0.95);
+}
+
+#right {
+    background-color: rgba(255, 165, 0, 0.95);
+}
+
+#addnewbutton, #loadbutton {
+    padding: 30px;
+    color: white;
+    border-radius: 15px;
+    border-width: 2px;
+}
+
+#addnewbutton > i, #loadbutton > i {
+    font-size: 1.5em;
+}
+
+.btn-outline-warning {
+    border-color: white;
+}
+
+.btn-outline-warning:hover {
+    background-color: rgba(255, 165, 0, 0.95);
+    border-color: rgba(255, 165, 0, 0.95);
+}
+
+.btn-outline-info {
+    border-color: white;
+}
+
+.btn-outline-info:hover {
+    background-color: rgba(75, 0, 130, 0.95);
+    border-color: rgba(75, 0, 130, 0.95);
+}
+
+/***********************************************************/
+/* Add New Screen Styling */
+#screenshot {
+    display: block;
+    margin: 30px auto 15px;
+    height: 200px;
+    width: 450px;
+}
+
+/* Title URL Box Styling */
+#title_url {
+    background: linear-gradient(to bottom, rgba(75, 0, 130, 0.95), rgba(75, 0, 130, 0.75));
+    height: 150px;
+    color: white;
+    overflow: auto;
+    margin: 30px 0px 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+    border-radius: 25px;
+}
+
+#title_holder, #url_holder {
+    margin: 10px 5px;
+}
+
+#title_holder > p, #url_holder > p {
+    margin: 0 30px;
+    font-size: 1.1em;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+#title, #url {
+    letter-spacing: 0.01em;
+    margin: 0 -10px;
+    padding: 3px 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+/* Color Scheme Styling */
+#color_scheme {
+    margin: 15px 0px;
+    text-align: center;
+    background: white;
+}
+
+#color_scheme > p {
+    font-size: 1.1em;
+    color: rgb(100, 100, 100);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+}
+
+#color_scheme > div {
+    border: 1px solid white;
+    margin: 5px 10px;
+    display: inline-block;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 21px 0;
+}
+
+/* Fonts Section */
+
+#fonts {
+    background: #ffa500;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+#fonts > p {
+    font-size: 1.1em;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+    margin-bottom: 2px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+    border: 2px solid white;
+    margin: 0 -10px 10px -50px;
+    border-radius: 15px;
+    list-style: none;
+    color: white;
+    font-size: 0.95em;
+    letter-spacing: 0.01em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    padding: 3px 10px;
+}
+
+/* Extra Notes */
+#notes {
+    margin: 30px 20px 15px;
+    border-radius: 25px;
+    border-bottom-right-radius: 0px;
+    padding: 7px 10px;
+    outline: none;
+}
+
+/* Save button */
+#savebuttoncontainer {
+    background: #001628;
+    height: 120px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#savebutton {
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    letter-spacing: 0.03em;
+    margin: 30px;
+}
+
+#savebutton:hover {
+    background-color: rgba(255, 165, 0, 0.95);
+    border-color: rgba(255, 165, 0, 0.95);
+}
+
+/************************************************************/
+/* Saved Designs Screen */
+#saved_designs {
+    background: linear-gradient(rgba(255, 165, 0, 0.9), rgba(255, 0, 64, 0.9)), url('../assets/popup_background.png') no-repeat center;
+    background-attachment: fixed;
+    color: white;
+}
+
+#saved_designs > h1 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.saved_design {
+    border: 2px solid white;
+    border-radius: 25px;
+    margin: 20px 30px;
+    text-align: center;
+    padding: 15px 25px;
+    height: 400px;
+}
+
+.designs_image {
+    margin: 0 10px 20px 0;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    float: left;
+}
+
+.designs_title {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+    border: 1px dotted white;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.designs_notes {
+    margin: 10px;
+    font-weight: 100;
+    letter-spacing: 0.015em;
+    font-size: 0.9em;
+}
+
+.colors_init, .fonts_init {
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    text-align: center;
+    margin: 0 20px 8px 0;
+}
+
+.fonts_init {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.designs_single_color {
+    display: inline-block;
+    border: 1px solid white;
+    margin: 3px 6px;
+}
+
+.designs_single_font {
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 7px 0;
+    float: left;
+}
+
+.btn-delete {
+    color: white;
+}
